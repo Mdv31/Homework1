@@ -91,25 +91,30 @@ public class Kotik {
         for (int hour = 0; hour <= 23; hour++) {
             int i = (int) (Math.random() * METHODS) + 1;
             switch (i) {
-                case (1) -> {
+                case (1) : {
                     if (this.play()) arrayLiveDay[hour] = hour + " - играл";
                     else arrayLiveDay[hour] = hour + " - ел";
+                    break;
                 }
-                case (2) -> {
+                case (2) : {
                     if (this.sleep()) arrayLiveDay[hour] = hour + " - спал";
                     else arrayLiveDay[hour] = hour + " - ел";
+                    break;
                 }
-                case (3) -> {
+                case (3) : {
                     if (this.wash()) arrayLiveDay[hour] = hour + " - умывался";
                     else arrayLiveDay[hour] = hour + " - ел";
+                    break;
                 }
-                case (4) -> {
+                case (4) : {
                     if (this.walk()) arrayLiveDay[hour] = hour + " - гулял";
                     else arrayLiveDay[hour] = hour + " - ел";
+                    break;
                 }
-                case (5) -> {
+                case (5) : {
                     if (this.hunt()) arrayLiveDay[hour] = hour + " - охотился";
                     else arrayLiveDay[hour] = hour + " - ел";
+                    break;
                 }
             }
         }
