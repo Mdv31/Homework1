@@ -1,4 +1,4 @@
-import Animals.Kotik;
+import animals.Kotik;
 
 public class Application {
 
